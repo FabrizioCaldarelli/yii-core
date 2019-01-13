@@ -200,6 +200,7 @@ class ResourceStreamTest extends TestCase
     {
         /* @var $stream ResourceStream|\PHPUnit_Framework_MockObject_MockObject */
         $stream = $this->getMockBuilder(ResourceStream::class)
+            ->setConstructorArgs([null])
             ->setMethods(['getMetadata'])
             ->getMock();
 
@@ -223,6 +224,7 @@ class ResourceStreamTest extends TestCase
     {
         /* @var $stream ResourceStream|\PHPUnit_Framework_MockObject_MockObject */
         $stream = $this->getMockBuilder(ResourceStream::class)
+            ->setConstructorArgs([null])
             ->setMethods(['getMetadata'])
             ->getMock();
 
